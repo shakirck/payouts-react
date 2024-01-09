@@ -77,26 +77,31 @@ body {
   display: flex;
   flex-direction: row;
   padding: 3.5%;
+  justify-content: center;
+  align-items: center;
 }
-
+.logo-down{
+  color: #fff;
+}
 .sidebar .logo-container .logo-details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   color: #d2d4d9;
-  text-decoration: none;
   width: 100%;
   padding: 0.5em;
 }
 
 .sidebar .logo-container .logo-details a {
-  text-decoration: none;
   color: #d2d4d9;
   font-size: 1.3rem;
   font-weight: 300;
   width: 100%;
   padding: 0;
+  /* underline */
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .sidebar-items {
@@ -680,38 +685,13 @@ body {
 .sidebar-ul {
   width: 100%;
 }
-
-@media only screen and (max-width: 600px) {
-  .overview-bottom {
-    display: flex;
-    flex-direction: column;
-
-    width: 80%;
-    justify-content: flex-start;
-    margin: 0;
-  }
-  .sidebar{
-    width: 20rem;
-    justify-content: flex-start;
-
-  }
-  .payout-card {
-    width: 70%;
-    margin: 0;
-  }
-  .overview-top{
-    width: 0%;
-  }
-  .transactions-row{
-    font-size: 1rem;
-  }
-}
+ 
 @media only screen and (max-width: 900px) {
   .overview-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     justify-content: flex-start;
     margin: 0;
   }
@@ -721,11 +701,11 @@ body {
     overflow-y: hidden;
   }
   .payout-card {
-    width: 70%;
+    width: 100%;
     margin: 0;
   }
   .overview-top{
-    width: 70%;
+    width: 100%;
   }
   .container{
     height: 100%;
@@ -734,7 +714,13 @@ body {
   position:relative
 
   }
+  .payouts-nav-container{
+    flex-wrap: wrap;
+  }
 }
 .transactions-header ul li {
   font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+ 
 }

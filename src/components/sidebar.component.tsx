@@ -28,6 +28,9 @@ const Sidebar = () => {
             <p>{data.name}</p>
             <a href={data.url}>visit store</a>
           </div>
+          <span className="material-symbols-outlined logo-down">
+              keyboard_arrow_down
+            </span>
         </div>
         <ul className="sidebar-ul">
           <li className="sidebar-items">
