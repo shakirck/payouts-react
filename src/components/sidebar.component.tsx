@@ -35,7 +35,7 @@ const Sidebar = () => {
               <img src={home} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Home</Link>
+              <Link to="/">Home</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -43,7 +43,7 @@ const Sidebar = () => {
               <img src={ordersIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Orders</Link>
+              <Link to="/">Orders</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -51,7 +51,7 @@ const Sidebar = () => {
               <img src={productsIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Products</Link>
+              <Link to="/">Products</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -59,7 +59,7 @@ const Sidebar = () => {
               <img src={deliveryIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Delivery</Link>
+              <Link to="/">Delivery</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -67,7 +67,7 @@ const Sidebar = () => {
               <img src={marketingIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Marketing</Link>
+              <Link to="/">Marketing</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -75,7 +75,7 @@ const Sidebar = () => {
               <img src={analyticsIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Analytics</Link>
+              <Link to="/">Analytics</Link>
             </div>
           </li>
           <li className="sidebar-items active">
@@ -83,7 +83,7 @@ const Sidebar = () => {
               <img src={paymentsIcon} alt="" />
             </div>
             <div className="sidebar-items-link ">
-              <Link to="/payments">Payments</Link>
+              <Link to="/">Payments</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -91,7 +91,7 @@ const Sidebar = () => {
               <img src={toolsIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Tools</Link>
+              <Link to="/">Tools</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -99,7 +99,7 @@ const Sidebar = () => {
               <img src={discountsIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Discounts</Link>
+              <Link to="/">Discounts</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -107,7 +107,7 @@ const Sidebar = () => {
               <img src={audienceIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Audience</Link>
+              <Link to="/">Audience</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -115,7 +115,7 @@ const Sidebar = () => {
               <img src={appearanceIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Appearance</Link>
+              <Link to="/">Appearance</Link>
             </div>
           </li>
           <li className="sidebar-items">
@@ -123,7 +123,7 @@ const Sidebar = () => {
               <img src={pluginsIcon} alt="" />
             </div>
             <div className="sidebar-items-link">
-              <Link to="/payments">Plugins</Link>
+              <Link to="/">Plugins</Link>
             </div>
           </li>
         </ul>
