@@ -8,15 +8,29 @@ const PayoutCard = (props: PayoutCardProps) => {
     <div className="payout-card">
       <div className={cardClass}>
         <div className="next-payout-top">
-          <div className="next-payout-text">{text}</div>
+          <div className="next-payout-text">{text}
+            <span className="material-symbols-outlined help-symbol">help</span>
+          </div>
           <div className="next-payout-amount-container">
             <div className="next-payout-amount">{amount}</div>
             <div className="next-payout-orders">
               {" "}
               <a href="#"> {orders} Orders</a>{" "}
-              <span className="material-symbols-outlined">
-                arrow_forward_ios
-              </span>{" "}
+
+              {date && (
+                <span className="material-symbols-outlined">
+                  arrow_forward_ios
+                </span>
+              )
+              }
+
+              {
+                !date && (
+                  <span className="material-symbols-outlined order-arrow">
+                    arrow_forward_ios
+                  </span>
+                )
+              }
             </div>
           </div>
         </div>

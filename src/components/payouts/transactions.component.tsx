@@ -3,14 +3,14 @@ import Search from "../search.component";
 const Transaction = () => {
   const transactionvalues = [];
   let startingValue = Math.floor(Math.random() * 100000);
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     const value = {
       orderId: `#${startingValue--}`,
       orderDate: "12/12/2020",
-      orderAmount: `$${(Math.random() * 100000).toFixed(3)}`,
+      orderAmount: `₹${(Math.random() * 100000).toFixed(3)}`,
       transactionFees: "$10",
-      status: ["successfull", "processing", "failed"][
-        Math.floor(Math.random() * 3)
+      status: ["successfull", "processing"][
+        Math.floor(Math.random() * 2)
       ],
       transactionId: `${Math.floor(Math.random() * 1000000000)}`,
     };
@@ -50,7 +50,7 @@ const Transaction = () => {
               Transaction ID
             </li>
             <li className="transactions-column-header column">Refund date</li>
-            <li className="transactions-column-header column">order Amount</li>
+            <li className="transactions-column-header column flex-end">Order amount</li>
           </ul>
         </div>
         <div className="transactions-values">

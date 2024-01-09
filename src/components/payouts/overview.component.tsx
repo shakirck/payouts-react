@@ -23,10 +23,10 @@ const Overview = () => {
           text="Next payout"
           orders="40"
           date="today"
-          amount="$4959"
+          amount="₹23434.49"
         />
-        <PayoutCard text="Next payout" orders="40" amount="$4959" />
-        <PayoutCard text="Next payout" orders="40" amount="$4959" />
+        <PayoutCard text="Amount Pending" orders="5" amount="₹4953.39" />
+        <PayoutCard text="Amount Processed" orders="40" amount="₹24234.34" />
       </div>
     </div>
   );
