@@ -4,9 +4,14 @@ const Transaction = () => {
   const transactionvalues = [];
   let startingValue = Math.floor(Math.random() * 100000);
   for (let i = 0; i < 7; i++) {
+    const randomDate = new Date(
+      2023,
+      Math.floor(Math.random() * 12),
+      Math.floor(Math.random() * 30)
+    );
     const value = {
       orderId: `#${startingValue--}`,
-      orderDate: "12/12/2020",
+      orderDate: randomDate.toDateString(),
       orderAmount: `₹${(Math.random() * 100000).toFixed(3)}`,
       transactionFees: "$10",
       status: ["successfull", "processing"][
